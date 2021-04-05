@@ -1,0 +1,95 @@
+.yunfeitableshow {
+  margin-top: 10px;
+  width: 840px;
+  overflow-x: auto;
+  .itemhead {
+    background: #fafafa;
+  }
+  .itemhead,
+  .item {
+    // min-width: 740px;
+
+    display: flex;
+    flex-direction: row;
+
+    .tableitem {
+      // padding: 0 10px;
+      margin-top: 24px;
+      // flex: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    .bhnum {
+      :global {
+        .ant-form-item {
+          input {
+            background: #fff;
+            border: none;
+            color: rgba(0, 0, 0, 0.85);
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    //场次名称
+    .name {
+      min-width: 150px;
+      flex: 150px;
+      // :global {
+      //   .ant-form-item {
+      //     input {
+      //       flex: 150px;
+      //     }
+      //   }
+      // }
+    }
+    .seTime {
+      min-width: 250px;
+      flex: 250px;
+    }
+    .maxQuota {
+      min-width: 120px;
+      flex: 120px;
+    }
+    .validQuota {
+      min-width: 140px;
+      flex: 140px;
+    }
+    .wbhnum {
+      min-width: 140px;
+      flex: 140px;
+    }
+    .actions {
+      min-width: 100px;
+      flex: 100px;
+    }
+    :global {
+      .ant-form-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+          text-align: center;
+        }
+        .ant-form-item-explain {
+          font-size: 12px;
+        }
+      }
+      .ant-col-12 {
+        max-width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .yunfeitableshow {
+    .itemhead,
+    .item {
+      width: 600px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import '~antd/lib/style/themes/default.less';
+.legend {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  min-width: 200px;
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+  transform: translateY(-50%);
+  z-index: 1000;
+  li {
+    height: 22px;
+    margin-bottom: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.dot {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 8px;
+}
+.percent {
+  color: @text-color-secondary;
+}
+.value {
+  position: absolute;
+  right: 0;
+}

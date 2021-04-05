@@ -1,0 +1,78 @@
+@import '~antd/es/style/themes/default.less';
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: @primary-color;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.main {
+  width: 100%;
+  padding: 44px 58px;
+  .ipticon {
+    width: auto;
+    height: 18px;
+    margin-right: 11px;
+  }
+
+  :global(.ant-form-item) {
+    width: 340px;
+    height: 67px;
+    margin-bottom: 0;
+  }
+  :global(.ant-form-item-control-input-content) {
+    input {
+      height: 35px;
+      border: 0;
+    }
+  }
+  :global(.ant-input-affix-wrapper) {
+    border: none;
+  }
+  :global(.ant-input-prefix) {
+    padding-right: 11px;
+    position: relative;
+    margin-right: 11px;
+    &::before {
+      content: '';
+      width: 1px;
+      height: 17px;
+      background: #dddddd;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+.loginbtn,
+.kloginbtn {
+  :global(.ant-btn) {
+    height: 42px;
+  }
+}
+.loginbtn {
+  margin: 15px 0;
+}
+.kloginbtn {
+  :global(.ant-btn) {
+    background: transparent;
+    border: 1px solid @primary-color;
+    color: @primary-color;
+  }
+}
+
+.des {
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  line-height: 17px;
+
+  span {
+    margin-right: 5px;
+    color: #e85837;
+  }
+}
+
+:global(.ant-form-item-explain) {
+  font-size: 12px;
+}

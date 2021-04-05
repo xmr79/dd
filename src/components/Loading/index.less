@@ -1,0 +1,36 @@
+:global {
+  .ant-pro-basicLayout .ant-pro-basicLayout-is-children.ant-pro-basicLayout-fix-siderbar{
+    .wrap-loading{
+      left: -100px !important;
+    }
+  }
+  .wrap-loading{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 999 !important;
+    &:before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #FFF;
+      opacity: .6;
+    }
+    .ant-spin-dot.ant-spin-dot-spin{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+    }
+    .loading-img{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 30px;
+      height: auto;
+      opacity: .6;
+    }
+  }
+}

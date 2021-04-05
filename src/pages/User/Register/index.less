@@ -1,0 +1,43 @@
+@import '~antd/es/style/themes/default.less';
+.sendcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: center;
+  .item {
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 28px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background: #3fbaab;
+      border-radius: 2px;
+      bottom: -10px;
+      left: 50%;
+      margin-left: -30px;
+      display: none;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .item.active {
+    color: @primary-color;
+    &::before {
+      display: block;
+    }
+  }
+}

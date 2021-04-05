@@ -1,0 +1,438 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+.mt-5 {
+  margin-top: 5px !important;
+}
+.mt-10 {
+  margin-top: 10px !important;
+}
+.mt-15 {
+  margin-top: 15px !important;
+}
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.ml-5 {
+  margin-left: 5px !important;
+}
+.ml-10 {
+  margin-left: 10px !important;
+}
+.ml-15 {
+  margin-left: 15px !important;
+}
+.ml-20 {
+  margin-left: 20px !important;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+.mr-10 {
+  margin-right: 10px !important;
+}
+.mr-15 {
+  margin-right: 15px !important;
+}
+.mr-20 {
+  margin-right: 20px !important;
+}
+.mr-30 {
+  margin-right: 30px !important;
+}
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.tn-l {
+  text-align: left;
+}
+.tn-c {
+  text-align: center;
+}
+.tn-r {
+  text-align: right;
+}
+.ft-24 {
+  font-size: 24px;
+}
+.color-gray {
+  color: rgba(0, 0, 0, 0.35);
+}
+.color-primary {
+  color: @primary-color !important;
+}
+
+// 清除上下浮动
+.clearfix {
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.fn-hide {
+  display: none !important;
+}
+// 单行字体溢出时显示省略号
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pointer {
+  cursor: pointer;
+  &:hover {
+    color: #40a9ff;
+  }
+}
+.wflex_r_s {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c9 {
+  color: #999 !important;
+}
+
+// 浏览器滚动条相关
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #506271;
+  border-radius: 4px;
+  &:hover {
+    background-color: #a0a0a0;
+  }
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+//页码居中
+.ant-pagination {
+  width: 100%;
+  margin: 24px 0 !important;
+  justify-content: center !important;
+  text-align: center;
+}
+
+.ant-pro-sider-menu-sider.fix-sider-bar {
+  overflow: hidden !important;
+}
+.ant-pro-sider-menu {
+  height: calc(~'100vh - 64px') !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+.ant-layout {
+  height: 100%;
+  overflow: hidden;
+  background-color: #f0f3fa;
+}
+.ant-divider-horizontal.ant-divider-with-text-left::before {
+  width: 2%;
+}
+
+// 最后一个divider 隐藏
+.ant-table {
+  .table-btn-col:last-child {
+    .ant-divider {
+      display: none;
+    }
+  }
+}
+
+.ant-pro-basicLayout-content {
+  margin: 0;
+}
+.ant-layout-header {
+  padding: 0 10px 0 20px;
+}
+
+// 公共搜索样式
+.ck-search {
+  :global {
+    .ant-card-body {
+      padding: 24px 24px 8px;
+      form {
+        .ant-form-item {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  background-color: #f2f5fc;
+  padding: 24px 24px 8px;
+  :global {
+    form {
+      .ant-form-item {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.right-container {
+  &.has-sider {
+    .FormSavebtn {
+      left: 300px;
+    }
+  }
+  .FormSavebtn {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    left: 100px;
+    right: 24px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -4px 4px 0px rgba(29, 35, 41, 0.05);
+    z-index: 1000;
+    button {
+      margin: 0 10px;
+    }
+  }
+}
+
+.required {
+  color: red;
+}
+
+// cms 样式
+.cms-container {
+  display: flex;
+  .cms-menu {
+    width: 150px;
+    margin-right: 20px;
+  }
+  .cms-list {
+    flex: 1;
+  }
+  .cms-unit-none {
+    width: 100%;
+    min-height: 300px;
+    border: 2px dashed #e0e0e0;
+    border-radius: 5px;
+    &:after {
+      display: block;
+      text-align: center;
+      content: '请从组件库中添加组件';
+      line-height: 298px;
+      font-size: 20px;
+      color: #bbb;
+    }
+  }
+  .cms-list {
+    padding-bottom: 40px;
+    .ant-card-extra span.anticon {
+      font-size: 20px;
+      padding: 0 15px;
+      color: #999;
+      cursor: pointer;
+      &.anticon-drag {
+        cursor: move;
+      }
+      &:hover {
+        color: #666;
+      }
+    }
+    .panel {
+      background: #ffffff;
+      margin-bottom: 10px;
+      border: 1px dashed #fff;
+      &:hover {
+        border-color: @primary-color;
+        border-radius: 4px;
+      }
+      .ant-card-head {
+        margin-bottom: 0;
+      }
+      .ant-card-actions {
+        li {
+          float: right;
+          width: 80px !important;
+          &:not(:last-child) {
+            border-left: 1px solid #f0f0f0;
+            border-right: 0;
+          }
+        }
+      }
+      .anticon {
+        &.disabled {
+          cursor: not-allowed;
+        }
+      }
+      .ant-upload-picture-card-wrapper {
+        width: 84px;
+        .ant-upload.ant-upload-select-picture-card,
+        .ant-upload-list-picture-card-container {
+          width: 74px;
+          height: 74px;
+        }
+      }
+      .cms-panel-list {
+        padding: 0;
+        margin: 0;
+        .cms-panel-list-item {
+          min-height: 80px;
+          display: flex;
+          align-items: flex-end;
+          position: relative;
+          padding: 10px 10px 2px;
+          margin-bottom: 10px;
+          border: 1px dashed #e0e0e0;
+          border-radius: 4px;
+          &:hover {
+            border-color: @primary-color;
+          }
+          & > .anticon {
+            position: absolute;
+            right: 10px;
+            font-size: 20px;
+            color: #e0e0e0;
+            &.anticon-drag {
+              top: 10px;
+              cursor: move;
+            }
+            &.anticon-delete {
+              top: 48px;
+              cursor: pointer;
+            }
+            &:hover {
+              color: #666;
+            }
+          }
+        }
+      }
+      .ant-input-group.ant-input-group-compact {
+        margin-top: 10px;
+        margin-bottom: 8px;
+        input {
+          background: #fff;
+        }
+      }
+      .pics-demo {
+        width: 350px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
+.wrap-cms-modal {
+  .ant-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .ant-modal-body {
+    height: calc(100vh - 107px);
+    overflow-y: auto;
+  }
+}
+.cms-code-preview .ant-modal-confirm-content canvas {
+  margin: 36px 70px 20px;
+}
+
+.row-dragging {
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.row-dragging td {
+  padding: 16px;
+  visibility: hidden;
+}
+
+.row-dragging .drag-visible {
+  visibility: visible;
+}
+
+//高德地图样式
+.amap-logo,
+.amap-copyright {
+  display: none !important;
+}

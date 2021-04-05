@@ -1,0 +1,43 @@
+@import '~antd/es/style/themes/default.less';
+.con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+
+    .extensionBtn {
+      position: absolute;
+      right: 20px;
+      top: 0;
+    }
+  }
+  .des {
+    font-size: 15px;
+    color: #999;
+    margin-top: 10px;
+  }
+  .tags {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .tag {
+      margin-top: 10px;
+      padding: 3px 8px;
+      border: 1px solid @primary-color;
+      border-radius: 3px;
+      color: @primary-color;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
